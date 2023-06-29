@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+    margin: 10px;
+}
+
+div {
+    border-width: 2px;
+    border-color: crimson;
+    border-style: solid;
+    margin: 10px;
+}

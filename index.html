@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html>
+<!-- not Visible -->
 <head>
     <title>Tim Ung</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/general_styles.css">
 </head>
-<body>
-    <!-- navigation around the website -->
-    <nav>
-        <ul>
-            <li><a href="projects.html" class="nav-buttons">Projects</a></li>
-            <li><a href="productivity.html" class="nav-buttons">The Factory</a></li>
-        </ul>
-    </nav>
-    <!-- About Me -->
-    <div>
-        <h3>About Me</h3>
-        <p>
-            I am a dedicated Computer Science student on track to graduate in late 2024. 
-            During my time as a Retail Consultant at Optus, I gained nearly 2 years of invaluable industry experience. 
-            I have honed my skills both academically and practically, making me proficient in a diverse array of programming languages and tools. 
-            I am passionate about leveraging my skills to create effective solutions and contribute meaningfully to your team.
-        </p>
-    </div>
-    <!-- Skills -->
-    <div>
-        <h3>Skills</h3>
-        <ul>
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>R</li>
-            <li>APIs</li>
-            <li>VBA</li>
-            <li>Excel</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </div>
-    <!-- Jobs -->
-    <div>
-        <h3>Experience</h3>
-        <ul>
-            <!-- Need to fix the tabs in between-->
-            <li>Monash Univeristy Optus Retail Consultant:       10/23 - Present</li>
-            <li>South Melbourne Optus Retail Consultant  :       10/21 - 10/22</li>
-            <li>Springvale HotStar Cook                  :       08/19 - 11/21</li>
-            <li>Bakers Delight Apprentice                :       08/18 - 07/19</li>
-        </ul>
-    </div>
-    <!-- Committee -->
 
+<style>
+
+.about_me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me_img{
+    height: 200px;
+    width: 500;
+    background-color: lightblue;
+}
+
+.about_me_txt {
+    max-width: 1000px;
+}
+
+
+</style>
+
+
+
+<!-- Visible -->
+<body>
+    <div>
+        <!-- navigation around the website -->
+        <div>
+            <ul>
+                <div><a href="projects.html" class="nav-buttons">Projects</a></div>
+                <div><a href="productivity.html" class="nav-buttons">The Factory</a></div>
+            </ul>
+        </div>
+        <!-- About Me -->
+        <div class="about_me">
+            <div class="about_me_img">
+                <p>img</p>
+            </div>
+            <div class="about_me_txt">
+                <h3>About Me</h3>
+                <p>
+                    I am a dedicated Computer Science student on track to graduate in late 2024. 
+                    During my time as a Retail Consultant at Optus, I gained nearly 2 years of invaluable industry experience. 
+                    I have honed my skills both academically and practically, making me proficient in a diverse array of programming languages and tools. 
+                    I am passionate about leveraging my skills to create effective solutions and contribute meaningfully to your team.
+                </p>
+            </div>
+        </div>
+        <!-- Skills -->
+        <div>
+            <h3>Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>R</li>
+                <li>APIs</li>
+                <li>VBA</li>
+                <li>Excel</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <!-- Jobs -->
+        <div>
+            <h3>Experience</h3>
+            <ul>
+                <!-- Need to fix the tabs in between-->
+                <li>Monash Univeristy Optus Retail Consultant:       10/23 - Present</li>
+                <li>South Melbourne Optus Retail Consultant  :       10/21 - 10/22</li>
+                <li>Springvale HotStar Cook                  :       08/19 - 11/21</li>
+                <li>Bakers Delight Apprentice                :       08/18 - 07/19</li>
+            </ul>
+        </div>
+        <!-- Committee -->
+    </div>
+    
 </body>
 
 </html>
