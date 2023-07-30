@@ -7,22 +7,28 @@
 </head>
 
 <style>
+.navigate {
+    position: relative;
+    display: inline-block;
+}
 
-.about_me{
-    display: flex;
-    flex-direction: row;
+.dropdown-content {
     justify-content: center;
     align-items: center;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    z-index: 1;
 }
 
-.about_me_img{
-    height: 200px;
-    width: 500;
-    background-color: lightblue;
+.navigate:hover .dropdown-content {
+    display: block;
 }
 
-.about_me_txt {
-    max-width: 1000px;
+.nav-title {
+    display: flex;
+    width: 2fr;
 }
 
 
@@ -33,13 +39,24 @@
 <!-- Visible -->
 <body>
     <div>
-        <!-- navigation around the website -->
-        <div>
-            <ul>
-                <div><a href="projects.html" class="nav-buttons">Projects</a></div>
-                <div><a href="productivity.html" class="nav-buttons">The Factory</a></div>
-            </ul>
+        <!-- Tim Ung -->
+        <div class="nav-title">
+
         </div>
+
+        <!-- navigation around the website -->
+        <div class="navigate">
+            <p>About Me</p>
+            <div class="dropdown-content">
+                <p>CV</p>
+                <p>Hobbies</p>
+            </div>
+            
+        </div>
+
+
+
+
         <!-- About Me -->
         <div class="about_me">
             <div class="about_me_img">

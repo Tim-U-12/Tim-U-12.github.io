@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<style>
+.nav-title {
+    flex: 3;
+    min-width: 150px;
+}
+
+.about-me-dropdown {
+    flex: 1;
+    position: relative;
+}
+
+.dropdown-content {
+    flex: 1;
+    display: none;
+    position:absolute;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+    z-index: 1;
+}
+
+.about-me-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+
+<html>
+    <head>
+        <title>Navigation Bar</title>
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <nav style="
+            display: flex;
+            flex-direction: row;
+        ">
+             <!-- navigation title -->
+             <div class="nav-title">
+                <p>Tim Ung</p>
+            </div>
+            
+            <!-- about me -->
+            <div class="about-me-dropdown">
+                <!-- dropdown content-->
+                About Me
+                <div class="dropdown-content">
+                    <p>Work Experience</p>
+                    <p>Hobbies</p>
+                </div>
+            </div>
+
+
+        </nav>
+    </body>
+</html>
