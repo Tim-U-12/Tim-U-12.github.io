@@ -1,4 +1,17 @@
 body {
-    margin: 0;
+    margin: 25px;
     overflow: hidden;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+a {
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    border: 2px solid black;
+    border-radius: 10px;
 }
